@@ -1,0 +1,28 @@
+{
+  "name": "nitrostack-beta-code-mode",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NitroStack Code Mode Template",
+  "scripts": {
+    "dev": "nitrostack-cli dev",
+    "build": "nitrostack-cli build",
+    "start": "npm run build && nitrostack-cli start",
+    "start:prod": "nitrostack-cli start"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.0.0",
+    "@nitrostack/core": "^1.1.0-beta.1",
+    "dotenv": "^16.3.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@nitrostack/cli": "^1.1.0-beta.1",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.3.3"
+  },
+  "author": "User",
+  "nitrostack": {
+    "skillsVersion": "1.0.0"
+  }
+}
