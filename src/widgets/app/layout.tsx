@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
 import { WidgetLayout } from '@nitrostack/widgets';
+import './globals.css';
 
 export default function RootLayout({
   children,
@@ -10,12 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Code Mode Widgets</title>
-      </head>
-      <body style={{ margin: 0, padding: 0, fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <body style={{ margin: 0, padding: 0, fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         <WidgetLayout>{children}</WidgetLayout>
       </body>
     </html>
